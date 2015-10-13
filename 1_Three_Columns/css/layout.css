@@ -1,0 +1,44 @@
+body, #container{
+  width:100%;
+  padding:0;
+  margin:0;
+  position:relative;
+}
+
+#left-column, #right-column, #center-column {
+  padding: 5px;
+}
+
+#left-column {
+  width: 100%;
+}
+
+#center-column {
+  width: 100%;
+}
+
+#right-column {
+  width: 100%;
+}
+
+/* 720px */
+
+@media screen and (min-width: 750px) {
+  #left-column {
+    display:table-cell;
+    left:0;
+    min-width: 170px;
+    width:170px;
+  }
+
+  #center-column {
+    display:table-cell;
+    min-width: 350px;
+  }
+
+  #right-column {
+    display:table-cell;
+    min-width: 200px;
+    width:200px;
+  }
+}
